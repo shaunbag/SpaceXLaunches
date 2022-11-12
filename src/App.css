@@ -1,38 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 .App {
+  text-align: center;
+  background-color: black;
+  color: green;
+}
+
+h1{
+  font-size: 3rem;
+  padding: 2%;
+  font-family: "Castellar";
+}
+h2{
+  font-size: 2rem;
+  padding: 1%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  font-size: 1.5rem;
+  padding: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ngTitle{
+  color: blue;
+  text-align: left;
+}
+.text{
+  padding: 20px;
+  padding-top: 3%;
+  text-align: left;
+
+  font-size: 1.2rem;
+}
+.Results{
+  text-align: left;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 5%;
+  background-color: black;
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btnGrid{
+  width: 92%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.video-responsive {
+  padding-bottom: 45%;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-responsive iframe {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.redTxt{
+  color: red;
+}
+
+.prplTxt{
+  color:purple;
+}
+
+.gridText{
+  text-align: left;
 }
