@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1> Space X Planned Launches</h1>
+      <h1> Space X Launches</h1>
         <Button 
           type="submit"
           variant="contained"

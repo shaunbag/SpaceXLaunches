@@ -23,10 +23,7 @@ export function Display(props){
                     <p className='text'>Was Launch a success: <span className="redTxt">{String(props.selected.launch_success)}</span></p>
                 </Grid>
             </Grid>
-
-
             
-
             <h1>Video</h1>
             <div className="video-responsive">
                 <iframe
