@@ -179,7 +179,7 @@ function App() {
           {
             selected.rocket ? selected.rocket.second_stage.payloads.map((item) => {
                 return <Grid item className='gridText'>
-                    <h3>Cargo Manifest: <a href={item.cargo_manifest}>{item.cargo_manifest}</a></h3>
+                    <h3>Cargo Manifest: <a href={item.cargo_manifest} target="_blank">{item.cargo_manifest}</a></h3>
                     <p>Customers: {
                             item.customers.map((item)=> {
                                 return <span className="prplTxt">{item + ", "}</span>
