@@ -79,18 +79,19 @@ h3{
 
 }
 
+.detailText{
+  font-size: 2rem;
+  text-align: left;
+  margin: 10px;
+}
+
 .video-responsive {
-  padding-bottom: 45%;
+  
   position: relative;
 }
 
 .video-responsive iframe {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  float:right;
 }
 
 .redTxt{
