@@ -32,7 +32,7 @@ export function Display(props){
                 <iframe
                     width="100%"
                     height="615"
-                    src={props.selected.links ? `https://www.youtube.com/embed/` + (props.selected.links.video_link.replace("https://www.youtube.com/watch?v=", "")) : ""}
+                    src={props.selected.links ? `https://www.youtube.com/embed/` + (props.selected.links.youtube_id) : ""}
                     allowFullScreen
                     title="embedded video" />
                     <p className='detailText'>{props.selected.details}</p>
