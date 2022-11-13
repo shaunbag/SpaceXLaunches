@@ -65,7 +65,7 @@ function App() {
           variant="contained"
           color="error"
           onClick={getApiData}
-        >Fectch Data</Button>
+        >Fetch Data</Button>
         <Button 
           type="submit"
           variant="contained"
