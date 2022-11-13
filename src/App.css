@@ -28,6 +28,7 @@ time, mark, audio, video {
   text-align: center;
   background-color: black;
   color: green;
+  overflow-x: hidden;
 }
 
 h1{

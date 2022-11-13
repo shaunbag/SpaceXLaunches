@@ -13,6 +13,7 @@ function App() {
       missionName: "",
       launchDateUTC: ""
     }]);
+
     function getApiData(e){
       e.preventDefault();
       axios.get(`https://api.spacexdata.com/v2/launches`).then(data => {
@@ -112,6 +113,8 @@ function App() {
           
           
           <p className='text'>{selected.details}</p>
+
+          <h1>Video</h1>
           <div className="video-responsive">
             <iframe
               width="100%"
@@ -124,6 +127,17 @@ function App() {
           <div className='text'>
             {selected.launch_failure_details ? <p>Failure Details: <span className="redTxt">{selected.launch_failure_details ? selected.launch_failure_details.reason : ""}</span></p> : ""}
           </div>
+          <h1>Images</h1>
+          <Grid container>
+            {
+              selected.links ? selected.links.flickr_images.map(item => {
+                return <Grid>
+                    <img width="300px" alt="not found" src={item}></img>
+                </Grid> 
+               
+              }) : ""
+            }
+          </Grid>
             <hr/>
           <h1>Technical Details</h1>
           <h2>Engine Details</h2>
