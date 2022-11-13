@@ -132,7 +132,10 @@ function App() {
             {
               selected.links ? selected.links.flickr_images.map(item => {
                 return <Grid>
-                    <img width="300px" alt="not found" src={item}></img>
+                  <a href={item} target="_blank" rel="noreferrer">
+                      <img width="300px" alt="not found" src={item}></img>
+                  </a>
+                    
                 </Grid> 
                
               }) : ""
@@ -179,7 +182,7 @@ function App() {
           {
             selected.rocket ? selected.rocket.second_stage.payloads.map((item) => {
                 return <Grid item className='gridText'>
-                    <h3>Cargo Manifest: <a href={item.cargo_manifest} target="_blank">{item.cargo_manifest}</a></h3>
+                    <h3>Cargo Manifest: <a href={item.cargo_manifest} target="_blank" rel="noreferrer">{item.cargo_manifest}</a></h3>
                     <p>Customers: {
                             item.customers.map((item)=> {
                                 return <span className="prplTxt">{item + ", "}</span>
