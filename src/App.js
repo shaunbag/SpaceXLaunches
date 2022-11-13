@@ -22,7 +22,7 @@ function App() {
       axios.get(`https://api.spacexdata.com/v2/launches`).then(data => {
         console.log(data)
         setResult(() => data.data)
-        alert("Fetch Successful Please Click Display")
+        alert("Fetch Successful Please Click Display, then select a mission Number")
       }).catch(error => {
         console.error(error)
         setResult(() => error)
